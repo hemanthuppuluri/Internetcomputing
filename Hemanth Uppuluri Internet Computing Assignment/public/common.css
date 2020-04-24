@@ -1,0 +1,191 @@
+.Boxes {
+  margin: 0%;
+  padding: 0%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "one  one  one one"
+                       "threea threea threea two"
+                       "threeb threeb threeb two"
+                       "threec threec threec two"
+                       "five five five five";  
+}
+
+.Boxes > .Box {
+  font-family: 'Slabo 27px', serif;
+  /*background-size: 100%;*/
+  border: 1px solid black;
+  margin: 0px;
+
+  width: 100%;
+}
+
+.Boxes > .box1 {
+  font-family: 'Slabo 27px', serif;
+  grid-area: one;
+  width: 100%;
+  height: 100%;
+}
+
+.Boxes > .box2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text color: black;
+  font-size: 15px;
+  grid-area: two;
+  height: 100%;  
+  width: 100%;
+  background-color: #C5C6C8;
+}
+.Boxes > .box3a {
+  font-family: 'Slabo 27px', serif;
+  background: #333;
+  grid-area: threea;
+  height: 100%; 
+  width: 100%;
+  color: #C5C6C8;
+}
+.Boxes > .box3b {
+    font-family: 'Slabo 27px', serif;
+    background: #0FF3DA;
+    grid-area: threeb;
+    height: 100%; 
+    width: 100%;
+    color: #C5C6C8;
+}
+  .Boxes > .box3c {
+    font-family: 'Slabo 27px', serif;
+    background: #333;
+    grid-area: threec;
+    height: 100%; 
+    width: 100%;
+    color: #C5C6C8;
+}
+.Boxes > .box4 {
+  font-family: 'Slabo 27px', serif;
+  grid-area: four;
+  height: 100%; 
+  width: 100%;
+  background-color: #C5C6C8;
+}
+.Boxes > .box5 {
+  font-family: 'Charmonman', cursive;
+  font-size: 30px;
+  text-align: center;
+  grid-area: five;
+  height: 100%;
+  width: 100%;
+  background-image: url("download.JFIF");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.bullet{
+  text-align: center;
+}
+
+ul {    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #0EFAB8;
+    align-items: center;
+    height: 100%; /* Full height */
+    position: relative; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+li a {
+    align-items: center;
+    display: block;
+    color: #0EFAB8;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #0EFAB8;
+    color: blue;
+}
+
+li{
+  padding: 2px;
+}
+
+.main {
+    margin-left: 21%;
+    margin-top: -5%;
+    width: 75%;
+    background-color: #0FF3DA;
+}
+
+.header{
+width: 100%;
+height: 100%;
+}
+/*img {
+    width: 100%;
+    height:100%; 
+    position: center;
+    overflow: hidden;
+}*/
+
+.active {
+    background-color: #4CAF50;
+    color: black;
+}
+/*
+.box4 > a:link {
+    text-decoration: none;
+}
+
+.box4 > a:visited {
+    text-decoration: none;
+}
+
+.box4 > a:hover {
+    text-decoration: none;
+}
+
+.box4 > a:active {
+    text-decoration: none;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}*/
+
+.container {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #4CAF50;
+    width: 100%;
+    height: 30%;
+}
+.centered {
+    color: #C5C6C8;
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
